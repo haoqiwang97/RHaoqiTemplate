@@ -21,12 +21,14 @@ unzip(s3_zip, exdir = recipes_data_dir)
 ### 0701
 Include graphics
 * output: pdf_document
-```{r rmarkdown, out.width="0.5\\textwidth"}
+```
+{r rmarkdown, out.width="0.5\\textwidth"}
 knitr::include_graphics("images/rmarkdown-sticker.png")
 ```
 
 * output: html_document
-```{r rmarkdown-sticker, out.width="50%"}
+```
+{r rmarkdown-sticker, out.width="50%"}
 knitr::include_graphics("images/rmarkdown-sticker.png")
 ```
 
@@ -40,7 +42,8 @@ Here's the logo for Rmarkdown
 
 ### 0704
 - [ ] Use rvest
-```{r get-google-doodle-url}
+```
+{r get-google-doodle-url}
 library("tidyverse")
 library("rvest")
 library("glue")

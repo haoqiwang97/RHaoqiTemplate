@@ -1,2 +1,2 @@
 # RHaoqiTemplate
-RHaoqiTemplate - R Markdown Template for Analysis
+RTemplate - R Markdown Template for Analysis

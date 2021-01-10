@@ -9,13 +9,10 @@ Download zip file from internet
 ```r
 recipes_data_dir <- tempdir()
 s2_zip <- tempfile(fileext = ".zip")
-s3_zip <- tempfile(fileext = ".zip")
 
 download.file(url = "https://media.nature.com/original/nature-assets/srep/2011/111215/srep00196/extref/srep00196-s2.zip", destfile = s2_zip)
-download.file(url = "https://media.nature.com/original/nature-assets/srep/2011/111215/srep00196/extref/srep00196-s3.zip", destfile = s3_zip)
 
 unzip(s2_zip, exdir = recipes_data_dir)
-unzip(s3_zip, exdir = recipes_data_dir)
 ```
 
 ### 0701
@@ -59,3 +56,49 @@ doodle_url
 download.file(url = doodle_url,
               destfile = "images/google-doodle.png")
 ```
+### 0801 Table
+* Raw markdown
+* knitr::kable()
+* DT::datatable() -> interactive
+
+### 0804
+- [ ] [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#Overview)
+
+### 0805 DT
+```
+library("tidyverse")
+library("fivethirtyeight")
+library("DT")
+
+bechdel %>%
+  filter(year > 1990) %>%
+  select(title, year, clean_test, binary, intgross_2013) %>%
+  arrange(desc(intgross_2013)) %>%
+  slice(1:20) %>% 
+  datatable(filter="top")
+```
+
+### Output options
+```
+output:
+  pdf_document: 
+    toc: true
+    df_print: kable
+  html_document: 
+    toc: true
+    df_print: kable
+output: 
+  html_document:
+    df_print: paged
+```
+
+## 09 Captions with book down
+### 0902
+
+## 10 Custmize style
+css file
+- [ ] 10.2, 10.3
+
+## 11 Insert HTML and Latex
+
+## 12 htmlwidgets

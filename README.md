@@ -4,12 +4,7 @@ RTemplate - R Markdown Template for Analysis
 * [Slides template](https://github.com/haoqiwang97/RTemplate/tree/main/05_04_slides_template)
 
 # [Linkedin learning](https://www.linkedin.com/learning/creating-reports-and-presentations-with-r-markdown-and-rstudio?u=36306084)
-
 [Update pandoc](https://pandoc.org/installing.html)
-
-```r
-knitr::include_graphics("images/knit-button.png")
-```
 
 ### 0401
 Download zip file from internet

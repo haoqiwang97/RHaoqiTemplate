@@ -1,4 +1,4 @@
-# RHaoqiTemplate
+# RTemplate
 RTemplate - R Markdown Template for Analysis
 * [HTML template](https://github.com/haoqiwang97/RTemplate/blob/main/HTML_template.Rmd)
 * [Slides template](https://github.com/haoqiwang97/RTemplate/tree/main/05_04_slides_template)

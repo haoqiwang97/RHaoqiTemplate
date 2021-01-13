@@ -1,5 +1,5 @@
 ---
-title: "Project name"
+title: "Name"
 author: "Haoqi Wang (hw9335)"
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -23,7 +23,6 @@ options(digits=4)
 set.seed(1234)
 ```
 
-
 ```{r echo=FALSE}
 # Get current script directory
 
@@ -32,19 +31,16 @@ setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 getwd()
 ```
 
-
 ```{r}
 library(tidyverse)
 library(readxl)
 ```
-
 
 ```{r}
 ## RMarkdown Workflow {.tabset} # horizontal tab
 ## RMarkdown Workflow {.tabset .tabset-dropdown} # drop down tab
 # namer: name each chunk
 ```
-
 
 ```{r echo = FALSE}
 source("data-processing.R")

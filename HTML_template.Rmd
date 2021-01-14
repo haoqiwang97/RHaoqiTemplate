@@ -25,8 +25,6 @@ set.seed(1234)
 
 ```{r echo=FALSE}
 # Get current script directory
-
-
 setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 getwd()
 ```
